@@ -33,10 +33,7 @@ package org.onepf.oms.appstore.googleUtils;
  * @version 1.3
  */
 
-import junit.framework.Assert;
-
 import org.jetbrains.annotations.NotNull;
-import org.onepf.oms.BuildConfig;
 
 /**
  * Base64 converter class. This code is not a complete MIME encoder;
@@ -362,9 +359,6 @@ public class Base64 {
             e += 4;
         }
 
-        if (BuildConfig.DEBUG) {
-            Assert.assertEquals(outBuff.length, e);
-        }
         return outBuff;
     }
 
